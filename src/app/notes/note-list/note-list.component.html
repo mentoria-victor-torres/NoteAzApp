@@ -1,0 +1,10 @@
+<p-carousel [value]="notes" [numVisible]="3" [numScroll]="1" [autoplayInterval]="3000" [circular]="true">
+
+  <ng-template let-note pTemplate="item">
+    <p-card [header]="note.title" (click)="move(note)">
+      <div appColorChangeByNote [colorFromNote]="note" [innerHTML]="note.content" style="max-height: 40px;overflow-y: auto;"></div>
+      <p appColorChangeByNote [colorFromNote]="note">{{note.createdAt | date}}</p>
+    </p-card>
+
+  </ng-template>
+</p-carousel>

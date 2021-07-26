@@ -1,0 +1,9 @@
+<!--appNoteColor [colorFromNote]="note"-->
+<h1 >{{note?.title}}</h1>
+<div [innerHTML]="note.content"></div>
+<div class="col-12">
+  <p-button (click)="edit()">Edit</p-button>
+</div>
+<div class="col-12">
+  <p-button (click)="back()">Back</p-button>
+</div>

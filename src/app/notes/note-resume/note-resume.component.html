@@ -1,0 +1,4 @@
+<app-note-list [header]="'Urgent and Important'" [notes]="filter(important, urgent)"></app-note-list>
+<app-note-list [header]="'Urgent and Not Important'" [notes]="filter(notImportant, urgent)"></app-note-list>
+<app-note-list [header]="'Not Urgent and Important'" [notes]="filter(important, notUrgent)"></app-note-list>
+<app-note-list [header]="'Not Urgent and Not Important'" [notes]="filter(notImportant, notUrgent)"></app-note-list>

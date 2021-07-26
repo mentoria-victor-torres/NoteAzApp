@@ -1,0 +1,11 @@
+<span class="p-float-label">
+  <input id="title" type="text" [(ngModel)]="note.title" pInputText class="col-12"/>
+  <label for="title">Title</label>
+</span>
+<p-editor [(ngModel)]="note.content" [style]="{'height':'320px'}" class="col-12"></p-editor>
+
+<p-selectButton class="col-12" [options]="urgencies" [(ngModel)]="urgency" optionLabel="name"></p-selectButton>
+<p-selectButton class="col-12" [options]="importancies" [(ngModel)]="importance" optionLabel="name"></p-selectButton>
+<div class="col-12 row">
+  <p-button (click)="save()">Save</p-button>
+</div>
